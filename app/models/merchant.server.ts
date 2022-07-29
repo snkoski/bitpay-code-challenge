@@ -13,3 +13,11 @@ export async function getMerchantByName(id: Merchant["id"]) {
 export async function getAllMerchants() {
   return prisma.merchant.findMany();
 }
+
+export async function createMerchant(name: string) {
+  return prisma.merchant.create({
+    data: {
+      name,
+    },
+  });
+}

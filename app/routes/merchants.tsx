@@ -4,6 +4,6 @@
 
 import { Outlet } from "@remix-run/react";
 
-export default function Merchant() {
+export default function MerchantsPage() {
   return <Outlet />;
 }
